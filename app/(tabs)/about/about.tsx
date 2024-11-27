@@ -1,11 +1,12 @@
 import { View, Text, StyleSheet } from "react-native";
 import React from "react";
 import Logo from "@/components/Logo";
-import { Link } from "expo-router";
+import { Link, Stack } from "expo-router";
 
 export default function about() {
   return (
     <View style={styles.container}>
+      <Stack.Screen />
       <Logo size={46} />
 
       <View style={styles.info}>

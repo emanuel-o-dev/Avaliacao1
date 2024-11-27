@@ -28,7 +28,9 @@ export default function UserActions(props: { options: string[] }) {
             break;
 
           case destructiveButtonIndex:
-            router.dismissAll();
+            if (router.canDismiss()) {
+              router.dismissAll();
+            }
             router.replace("/");
             break;
           case cancelButtonIndex:

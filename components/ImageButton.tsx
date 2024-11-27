@@ -1,10 +1,19 @@
-import { View, Text, Pressable, StyleSheet, Image } from "react-native";
+import {
+  View,
+  Text,
+  Pressable,
+  StyleSheet,
+  Image,
+  ImageSourcePropType,
+  StyleProp,
+  ImageStyle,
+} from "react-native";
 import React from "react";
 
 export default function ImageButton(props: {
-  source: any;
-  loginStyle: any;
-  onPress: any;
+  source: ImageSourcePropType | undefined;
+  loginStyle: StyleProp<ImageStyle>;
+  onPress: () => void;
 }) {
   return (
     <Pressable onPress={props.onPress}>

@@ -1,9 +1,8 @@
 import UserActions from "@/components/UserActions";
 import { ActionSheetProvider } from "@expo/react-native-action-sheet";
-import FontAwesome from "@expo/vector-icons/FontAwesome";
-import { Stack, Tabs } from "expo-router";
+import { Stack } from "expo-router";
 
-export default function TabLayout() {
+export default function StackLayout() {
   return (
     <ActionSheetProvider>
       <Stack>

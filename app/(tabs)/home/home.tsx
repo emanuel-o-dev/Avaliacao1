@@ -49,9 +49,8 @@ const styles = StyleSheet.create({
   },
   sectionList: {
     alignItems: "center",
-    margin: 15,
+    margin: 20,
     padding: 1,
-    width: "90%",
     borderRadius: 20,
     gap: 10,
     backgroundColor: "#606060",

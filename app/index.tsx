@@ -11,7 +11,9 @@ export default function Login() {
 
   function handleLogin() {
     if (username == "fulano" && password == "123") {
-      router.dismissAll();
+      if (router.canDismiss()) {
+        router.dismissAll();
+      }
       router.replace("/home/home");
     }
   }
